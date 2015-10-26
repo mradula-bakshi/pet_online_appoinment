@@ -1,0 +1,47 @@
+<%= form_for(@pet) do |f| %>
+  <% if @pet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pet.errors.count, "error") %> prohibited this pet from being saved:</h2>
+
+      <ul>
+      <% @pet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :pet_type %><br>
+    <%= f.select 'pet_type', options_for_select([["Dog","Dog"],["Cat","Cat"],["Bird","Bird"]]) %>
+  </div>
+  <div class="field">
+    <%= f.label :breed %><br>
+    <%= f.text_field :breed %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :date_of_last_visit %><br>
+    <%= f.date_field :date_of_last_visit %>
+  </div>
+  
+  <%= f.fields_for :appointments do |appointment_form| %>
+  
+      <%= appointment_form.hidden_field :id, :value=> @appointment_id.to_i%>
+      
+    </p>
+  <%end%>
+  <div class="actions">
+    <%= f.submit(:param1 => @appoinment_id) %>
+  </div>
+<% end %>

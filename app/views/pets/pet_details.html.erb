@@ -1,0 +1,34 @@
+<h1>Pet appointment details </h1>
+<% if !@appointment.nil?%>
+<p>
+  <strong>Date of visit:</strong>
+  <%= @appointment.date_of_visit %>
+</p>
+
+<p>
+  <strong>Pet:</strong>
+  <%= @appointment.pet_value %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @appointment.customer %>
+</p>
+
+<p>
+  <strong>Reminder for apoointment:</strong>
+  <%= @appointment.reminder_for_apoointment %>
+</p>
+
+<p>
+  <strong>Reason for visit:</strong>
+  <%= @appointment.reason_for_visit %>
+</p>
+<%else%>
+<p>
+ <%= 'No recored found' %>
+ </p>
+<%end%>
+
+
+

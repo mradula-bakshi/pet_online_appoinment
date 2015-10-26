@@ -1,0 +1,36 @@
+                  Prefix Verb   URI Pattern                                     Controller#Action
+              home_index GET    /home/index(.:format)                           home#index
+        pet_details_pets GET    /pets/pet_details(.:format)                     pets#pet_details
+                    pets GET    /pets(.:format)                                 pets#index
+                         POST   /pets(.:format)                                 pets#create
+                 new_pet GET    /pets/new(.:format)                             pets#new
+                edit_pet GET    /pets/:id/edit(.:format)                        pets#edit
+                     pet GET    /pets/:id(.:format)                             pets#show
+                         PATCH  /pets/:id(.:format)                             pets#update
+                         PUT    /pets/:id(.:format)                             pets#update
+                         DELETE /pets/:id(.:format)                             pets#destroy
+            appointments GET    /appointments(.:format)                         appointments#index
+                         POST   /appointments(.:format)                         appointments#create
+         new_appointment GET    /appointments/new(.:format)                     appointments#new
+        edit_appointment GET    /appointments/:id/edit(.:format)                appointments#edit
+             appointment GET    /appointments/:id(.:format)                     appointments#show
+                         PATCH  /appointments/:id(.:format)                     appointments#update
+                         PUT    /appointments/:id(.:format)                     appointments#update
+                         DELETE /appointments/:id(.:format)                     appointments#destroy
+doctor_show_doctors_list GET    /doctors/:doctor_id/show_doctors_list(.:format) doctors#show_doctors_list
+                 doctors GET    /doctors(.:format)                              doctors#index
+                         POST   /doctors(.:format)                              doctors#create
+              new_doctor GET    /doctors/new(.:format)                          doctors#new
+             edit_doctor GET    /doctors/:id/edit(.:format)                     doctors#edit
+                  doctor GET    /doctors/:id(.:format)                          doctors#show
+                         PATCH  /doctors/:id(.:format)                          doctors#update
+                         PUT    /doctors/:id(.:format)                          doctors#update
+                         DELETE /doctors/:id(.:format)                          doctors#destroy
+                         GET    /home(.:format)                                 home#index
+                         POST   /home(.:format)                                 home#create
+                new_home GET    /home/new(.:format)                             home#new
+               edit_home GET    /home/:id/edit(.:format)                        home#edit
+                    home GET    /home/:id(.:format)                             home#show
+                         PATCH  /home/:id(.:format)                             home#update
+                         PUT    /home/:id(.:format)                             home#update
+                         DELETE /home/:id(.:format)                             home#destroy

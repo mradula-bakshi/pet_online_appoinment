@@ -1,0 +1,44 @@
+<% if params[:value].to_s == 'Customer'%>
+<h1>Search for your's pet next appointment enter pet id</h1>
+   <%= form_tag pet_details_pets_path, :method => 'get' do %>
+   <div class="field">
+   		<%= text_field_tag :pet_id, params[:id] %>
+  	</div>
+  	<div class="actions">
+   <%= submit_tag "Search", :name => nil %>
+  </div>
+   <% end %>
+<%else%>
+<h1>Listing pets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Breed</th>
+      <th>Age</th>
+      <th>Weight</th>
+      <th>Date of last visit</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pets.each do |pet| %>
+      <tr>
+        <td><%= pet.name %></td>
+        <td><%= pet.pet_type %></td>
+        <td><%= pet.breed %></td>
+        <td><%= pet.age %></td>
+        <td><%= pet.weight %></td>
+        <td><%= pet.date_of_last_visit %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pet', new_pet_path %>
+<%end%>
