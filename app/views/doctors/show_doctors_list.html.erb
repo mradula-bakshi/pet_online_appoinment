@@ -1,3 +1,4 @@
+<body class="body">
 <h1>Appoinment list </h1>
 <table style="width:50%">
   <thead>
@@ -35,5 +36,8 @@
 <br>
 
 <%if params[:value].to_s == 'Receptionist'%>
+<div class="doctor-button">
 	<%= link_to 'New Pet appoinment', new_appointment_path(:doctor_id => params[:doctor_id],:value => 'Receptionist') %>
+</div>
 <%end%>
+</body>

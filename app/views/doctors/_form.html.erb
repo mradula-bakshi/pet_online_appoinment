@@ -1,3 +1,4 @@
+<body class="body">
 <%= form_for(@doctor) do |f| %>
   <% if @doctor.errors.any? %>
     <div id="error_explanation">
@@ -39,7 +40,6 @@
     <%= f.label :experience %><br>
     <%= f.number_field :experience %>
   </div>
-  <div class="actions">
     <%= f.submit %>
-  </div>
 <% end %>
+</body>

@@ -8,3 +8,49 @@ table {
 table, th, td {
     border: 1px solid black;
 }
+.doctor-button {
+    padding: 4px 9px;
+    background: #4479BA;
+    color: #FFF;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    border: solid 1px #203E5F;
+    width:190px;
+    height:50px;
+}
+.doctor-button:hover, .doctor-button:focus {
+    background: #356094;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+}
+div.doctor-button, div.actions {
+    margin-bottom: 41px;
+}
+.doctor-body {
+    background-color: #b0c4de;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 19px;
+    line-height: 18px;
+}
+.doctor-button-submit {
+    padding: 4px 9px;
+    background: #4479BA;
+    color: #FFF;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    border: solid 1px #203E5F;
+    width:190px;
+    height:30px;
+}
+div.doctor-button-submit, div.actions {
+    margin-bottom: 41px;
+}
+.doctor-button-submit:hover, .doctor-button-submit:focus {
+    background: #356094;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+}
+input[type="button"], input[type="submit"]:focus {
+  /* your style goes here */
+ background: #356094;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+}

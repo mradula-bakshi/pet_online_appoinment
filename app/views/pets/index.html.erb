@@ -1,3 +1,4 @@
+<body class="body">
 <% if params[:value].to_s == 'Customer'%>
 <h1>Search for your's pet next appointment enter pet id</h1>
    <%= form_tag pet_details_pets_path, :method => 'get' do %>
@@ -42,3 +43,4 @@
 
 <%= link_to 'New Pet', new_pet_path %>
 <%end%>
+</body>

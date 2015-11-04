@@ -1,11 +1,15 @@
-<h1>Welcome</h1>
 
-<div class="field">
+<body class="body">
+<div class="heading">
+<h1> Welcome to pet online appointment system </h1>
+</div>
+<div class="home-button">
 	<%= link_to 'Receptionist', doctors_path(:value => 'Receptionist') %>
 </div>
-<div class="field">
+<div class="home-button">
 	<%= link_to 'Doctor', doctors_path(:value => 'Doctor') %>
 </div>
-<div class="field">
+<div class="home-button">
 	<%= link_to 'Customer', pets_path(:value => 'Customer') %>
 </div>
+</body>

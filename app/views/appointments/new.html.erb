@@ -1,5 +1,4 @@
 <h1>New appointment</h1>
 
 <%= render 'form' %>
-
-<%= link_to 'Back', appointments_path %>
+<%= link_to 'Back', doctor_show_doctors_list_path(:doctor_id => params[:doctor_id],:value => 'Receptionist') %>
